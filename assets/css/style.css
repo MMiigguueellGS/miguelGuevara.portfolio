@@ -1,0 +1,329 @@
+/* CREACION DE VARIABLES */
+:root {
+  --color-principal: #f9fafc;
+  --color-secundary: #21baa0;
+  --color-background: #161616;
+  --color-transparent: transparent;
+
+  --color-icon: #b5b6b7;
+  --color-titles: #222222;
+  --color-subtitle: #888;
+  --color-text: #555;
+}
+/* ESTILOS GENERALES */
+html {
+  font-size: 10px;
+}
+body {
+  width: 100%;
+  height: auto;
+  font-family: "poppins", Helvetica, sans-serif;
+  font-size: 1.5rem;
+  background-color: var(--color-background);
+  opacity: .75;
+  color: var(--color-text);
+  overflow: hidden;
+}
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+  color: var(--color-titles);
+}
+
+/* IMAGEN DE FONDO*/
+body {
+  background-image: url("../img/fondo.png");
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-position: -20px -120px;
+}
+
+/* ESTRUCTURA PRINCIPAL*/
+.layout {
+  position: relative;
+  min-width: 1300px;
+  width: 75%;
+  height: 80vh;
+  min-height: 80vh;
+  margin: 10vh auto;
+
+  display: grid;
+  grid-template-areas: "aside content";
+  grid-template-columns: 30% 70%;
+
+  /* Sombrea detras del layout*/
+  border-radius: 4rem;
+  box-shadow: 0 0 10rem -5px rgba(0, 0, 0, 0.25);
+}
+
+/* BARRA LATERAL VERDE*/
+.layout__aside {
+  grid-area: aside;
+  border-radius: 4rem 0 0 4rem;
+  overflow: auto;
+  overflow-x: hidden;
+}
+
+.aside__user-info {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  text-align: center;
+
+  min-height: 100%;
+  min-width: 30rem;
+
+  background-color: var(--color-secundary);
+  color: var(--color-principal);
+}
+
+.user-info__container-imagen {
+  position: relative;
+  display: inline-block;
+  width: 18rem;
+  margin-top: 7rem;
+  z-index: 1;
+}
+
+.user-info__image {
+  width: 100%;
+  background-color: var(--color-principal);
+  border: 3px solid var(--color-principal);
+  border-radius: 20rem;
+}
+
+.user-info__container-imagen::after {
+  content: "hola";
+  position: absolute;
+  top: 0;
+  left: 9%;
+  width: 100%;
+  height: 100%;
+  z-index: -1;
+  background-image: -webkit-repeating-radial-gradient(
+    center center,
+    #fff,
+    #fff 1px,
+    transparent 0px,
+    transparent 100%
+  );
+  background-size: 0.6rem 0.6rem;
+  opacity: 0.6;
+  border-radius: 30rem;
+}
+.user-info__name {
+  margin-top: 2.6rem;
+  font-size: 3.2rem;
+  font-weight: bold;
+  color: var(--color-principal);
+}
+.user-info__job {
+  font-size: 1.7rem;
+  font-weight: 200;
+  color: var(--color-principal);
+}
+
+.user-info__links {
+  margin-bottom: 3.6rem;
+}
+.links__social {
+  margin-top: 2rem;
+  text-align: center;
+  display: flex;
+}
+.social__option {
+  height: 3rem;
+  width: 3rem;
+  font-size: 1.8rem;
+  line-height: 3rem;
+  opacity: 0.9;
+  border-radius: 3.2rem;
+  transition: all 300ms ease-in-out;
+}
+.social__option:hover {
+  opacity: 1;
+  background-color: rgba(255, 255, 255, 0.3);
+}
+
+.user-info__buttons {
+  margin-top: 2rem;
+  margin-bottom: 4rem;
+}
+
+.user-info__btn {
+  border: 2px solid var(--color-principal);
+  border-radius: 3.2rem;
+  padding: 1.3rem 3rem;
+  color: var(--color-principal);
+  box-shadow: 0 10px 10px -8px rgba(0, 0, 0, 0.22);
+  transition: all 300ms ease-in-out;
+}
+.user-info__btn:hover {
+  background-color: var(--color-principal);
+  color: var(--color-secundary);
+}
+
+.user-info__footer {
+  position: absolute;
+  bottom: 2rem;
+  font-size: 1.2rem;
+}
+/* CONTENIDO PRINCIAL*/
+.layout__content {
+  grid-area: content;
+  height: 100%;
+  min-height: 100%;
+  background-color: var(--color-secundary);
+  border-radius: 0 10rem 10rem 0;
+}
+.content__page {
+  background-color: var(--color-principal);
+  min-height: 100%;
+  border-radius: 3.2rem;
+
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+
+.page__name {
+  font-size: 6rem;
+  margin-bottom: 1rem;
+  color: var(--color-secundary);
+}
+
+.page__job {
+  font-size: 2.1rem;
+  font-weight: lighter;
+  color: var(--color-subtitle);
+}
+/* MENU NAVEGACION LATERAL*/
+
+.layout__menu {
+  display: block;
+  position: absolute;
+  top: 0;
+  right: -110px;
+  min-width: 11rem;
+  background-color: var(--color-transparent);
+}
+
+.menu__list {
+  position: relative;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-around;
+  align-items: center;
+  width: 60%;
+  min-height: 32rem;
+  padding: 2rem 0;
+  margin-left: 2rem;
+  background-color: var(--color-principal);
+  box-shadow: 0 0 3rem -0.5rem rgba(0, 0, 0, 0.15);
+  border-radius: 6rem;
+}
+
+.menu__option {
+  display: block;
+  width: 100%;
+  text-align: center;
+}
+
+.menu__option:hover .menu__icon {
+  color: var(--color-secundary);
+}
+.menu__icon {
+  color: var(--color-icon);
+  font-size: 2.8rem;
+  transition: all 300ms ease-in-out;
+}
+
+.menu__overlay {
+  position: absolute;
+  right: 0;
+  margin-top: -3rem;
+  display: block;
+  opacity: 0;
+  padding: 0.5rem 1rem;
+  color: var(--color-principal);
+  background-color: var(--color-secundary);
+  white-space: nowrap;
+  transition: all 300ms ease-in-out;
+}
+.menu__option:hover .menu__overlay {
+  opacity: 1;
+  right: 100%;
+}
+
+/*?? SOBRE MI*/
+
+.content__about {
+  height: 100%;
+  min-height: 100%; /*! puedo borrarlo ?*/
+  padding: 6rem;
+  padding-right: 3rem;
+  overflow: auto;
+  display: block;
+}
+
+.about__header{
+    margin-bottom: 4.5rem;
+    display: inline-block;
+}
+.about__title{
+  font-size: 3.2rem;
+  position: relative;
+}
+
+.about__title::after{
+  content: "";
+  position: absolute;
+  top: 20px;
+  right: -25px;
+  height: 30px;
+  width: 50px;
+  background-image: -webkit-repeating-radial-gradient(center center,var(--color-secundary),var(--color-secundary) 1px, transparent 0px,transparent 100%); 
+  background-size: 6px 6px ;
+  
+
+}
+
+.title_color{
+  color: var(--color-secundary);
+}
+
+/*Maquetando informacion personal*/
+.about__personal-info{
+  width: 100%;
+  display: flex;
+  flex-direction: row;
+  margin-bottom: 5rem;
+}
+
+.personal-info__bio{
+  flex-basis: 56%;
+}
+
+.personal_info__description{
+  font-size: 1.4rem;
+  line-height: 2.5rem;
+}
+
+.personal-info__data{
+  flex-basis: 44%;
+  padding: 0 2.4rem;
+}
+
+.personal-info__option{
+  margin-bottom: 1rem;
+}
+
+.personal-info__title{
+  color: var(--color-secundary);
+  font-weight: 600;
+  margin-right:  0.5rem;
+}
