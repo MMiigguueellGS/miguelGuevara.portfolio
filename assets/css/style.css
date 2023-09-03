@@ -20,7 +20,7 @@ body {
   font-family: "poppins", Helvetica, sans-serif;
   font-size: 1.5rem;
   background-color: var(--color-background);
-  opacity: .75;
+  opacity: 0.75;
   color: var(--color-text);
   overflow: hidden;
 }
@@ -270,60 +270,126 @@ body {
   display: block;
 }
 
-.about__header{
-    margin-bottom: 4.5rem;
-    display: inline-block;
+.about__header {
+  margin-bottom: 4.5rem;
+  display: inline-block;
 }
-.about__title{
+.about__title {
   font-size: 3.2rem;
   position: relative;
 }
 
-.about__title::after{
+.about__title::after {
   content: "";
   position: absolute;
   top: 20px;
   right: -25px;
   height: 30px;
   width: 50px;
-  background-image: -webkit-repeating-radial-gradient(center center,var(--color-secundary),var(--color-secundary) 1px, transparent 0px,transparent 100%); 
-  background-size: 6px 6px ;
-  
-
+  background-image: -webkit-repeating-radial-gradient(
+    center center,
+    var(--color-secundary),
+    var(--color-secundary) 1px,
+    transparent 0px,
+    transparent 100%
+  );
+  background-size: 6px 6px;
+  opacity: 0.5;
 }
 
-.title_color{
+.title__color {
   color: var(--color-secundary);
 }
 
 /*Maquetando informacion personal*/
-.about__personal-info{
+.about__personal-info {
   width: 100%;
   display: flex;
   flex-direction: row;
   margin-bottom: 5rem;
 }
 
-.personal-info__bio{
+.personal-info__bio {
   flex-basis: 56%;
 }
 
-.personal_info__description{
+.personal_info__description {
   font-size: 1.4rem;
   line-height: 2.5rem;
 }
 
-.personal-info__data{
+.personal-info__data {
   flex-basis: 44%;
   padding: 0 2.4rem;
 }
 
-.personal-info__option{
+.personal-info__option {
   margin-bottom: 1rem;
 }
 
-.personal-info__title{
+.personal-info__title {
   color: var(--color-secundary);
   font-weight: 600;
-  margin-right:  0.5rem;
+  margin-right: 0.5rem;
+}
+/* SERVICIOS*/
+.about__services{
+  width: 100%;
+  margin-bottom: 3rem;
+}
+
+.services__header {
+  display: inline-block;
+  padding-right: 1.2rem;
+  position: relative;
+  margin-bottom: 2.5rem;
+}
+
+.services__title {
+  font-size: 2rem;
+}
+
+.services__title::after {
+  content: "";
+  position: absolute;
+  top: 15px;
+  right: 0;
+  height: 20px;
+  width: 30px;
+  background-image: -webkit-repeating-radial-gradient(
+    center center,
+    var(--color-secundary),
+    var(--color-secundary) 1px,
+    transparent 0px,
+    transparent 100%
+  );
+  background-size: 6px 6px;
+  opacity: 0.5;
+}
+
+.services__container{
+  width: 100%;
+  display: flex;
+  flex-direction: row;/*! valor por defecto , puedo quitarlo si gusto*/
+  flex-wrap: wrap;
+}
+
+.services__service{
+  flex-basis: calc(50% - 3rem);
+  margin-right: 3rem;
+  margin-bottom: 2.5rem;
+}
+
+.service_real-icon{
+  color: var(--color-secundary);
+  font-size: 3.8rem;
+}
+
+.service__title{
+  font-size: 1.8rem;
+  margin: .5rem;
+}
+
+.service__description{
+  font-size: 1.5rem;
 }
