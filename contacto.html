@@ -1,0 +1,202 @@
+<!DOCTYPE html>
+<html lang="es">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <!-- Estilos -->
+
+  <link rel="stylesheet" href="assets/fonts/fontawesome-free-6.1.2-web/css/all.min.css">
+  <link rel="stylesheet" href="assets/fonts/poppins/poppins.css">
+  <link rel="stylesheet" href="assets/css/reset.css">
+  <link rel="stylesheet" href="assets/css/scroll.css">
+  <link rel="stylesheet" href="assets/css/style.css">
+  <title>Portafolio - Miguel Guevara</title>
+</head>
+
+<body>
+
+  <!-- Layout principal -->
+  <div class="layout">
+
+    <!-- Barra lateral (info Usuario) -->
+    <aside class="layout__aside">
+
+      <secction class="aside__user-info">
+
+        <!-- informacion General del Usuario -->
+        <div class="user-info__general">
+          <div class="user-info__container-imagen">
+            <img src="assets/img/foto-perfil.png" alt="Foto perfil Usuario" class="user-info__image">
+            <!-- aqui ira el seudoelemento after(ultimo Hijo de contenedor)  fondo de la imagen -->
+          </div>
+
+          <h2 class="user-info__name">Miguel Guevara</h2>
+          <h3 class="user-info__job">Desarrollador Web</h3>
+        </div>
+
+        <!-- Menu de navegacion -->
+        <nav class="layout__menu">
+          <ul class="menu__list">
+            <li class="menu__option">
+              <a href="index.html" class="menu__link">
+                <i class="menu__icon  fa-solid fa-house "></i>
+                <span class="menu__overlay">Home</span>
+              </a>
+            </li>
+            <li class="menu__option">
+              <a href="sobreMi.html" class="menu__link ">
+                <i class="menu__icon  fa-solid fa-user "></i>
+                <span class="menu__overlay">Sobre mi</span>
+              </a>
+            </li>
+            <li class="menu__option">
+              <a href="curriculum.html" class="menu__link ">
+                <i class="menu__icon  fa-solid fa-graduation-cap "></i>
+                <span class="menu__overlay">Curriculum</span>
+              </a>
+            </li>
+            <li class="menu__option">
+              <a href="portafolio.html" class="menu__link ">
+                <i class="menu__icon  fa-solid fa-briefcase "></i>
+                <span class="menu__overlay">Portafolio</span>
+              </a>
+            </li>
+            <li class="menu__option">
+              <a href="blog.html" class="menu__link ">
+                <i class="menu__icon  fa-solid fa-book "></i>
+                <span class="menu__overlay">Blog</span>
+              </a>
+            </li>
+            <li class="menu__option">
+              <a href="contacto.html" class="menu__link menu__link--active">
+                <i class="menu__icon  fa-solid fa-envelope "></i>
+                <span class="menu__overlay">Contacto</span>
+              </a>
+            </li>
+          </ul>
+        </nav>
+
+        <!-- Links a redes Sociales -->
+        <div class="user-info__links">
+          <ul class="links__social">
+            <li class="social__option">
+              <a href="#" class="social__link">
+                <i class="social__icon fa-brands fa-youtube"></i>
+              </a>
+            </li>
+            <li class="social__option">
+              <a href="#" class="social__link">
+                <i class="social__icon fa-brands fa-linkedin"></i>
+              </a>
+            </li>
+            <li class="social__option">
+              <a href="#" class="social__link">
+                <i class="social__icon fa-brands fa-instagram"></i>
+              </a>
+            </li>
+          </ul>
+        </div>
+
+        <!-- boton del cv -->
+        <div class="user-info__buttons">
+          <a href="#" class="user-info__btn">Descargar CV</a>
+        </div>
+
+
+        <!-- pie de pagina -->
+        <footer class="user-info__footer">
+          &copy;2023 Miguel Angel Guevara Simon
+        </footer>
+
+      </secction>
+    </aside>
+
+    <!-- contenido Principal -->
+    <main class="layout__content">
+      <section class="content__page content__contact">
+        <!-- ESTE CONTENIDO CAMBIA EN CADA SITIO web -->
+        <header class="contact__header">
+          <h1 class="contact__title">Contacto</h1>
+        </header>
+
+        <section class="contact__container">
+
+          <section class="contact__info">
+
+            <div class="contact__data">
+              <i class="contact__icon fa-solid fa-location-dot"></i>
+              <h2 class="contact__subtitle">Trujillo</h2>
+            </div>
+            <div class="contact__data">
+              <i class="contact__icon fa-solid fa-phone"></i>
+              <h2 class="contact__subtitle">914290630</h2>
+            </div>
+            <div class="contact__data">
+              <i class="contact__icon fa-solid fa-envelope"></i>
+              <h2 class="contact__subtitle">mguevarasimon@gmail.com</h2>
+            </div>
+            <div class="contact__data">
+              <i class="contact__icon fa-solid fa-circle-check"></i>
+              <h2 class="contact__subtitle">Desarrollador Freelance</h2>
+            </div>
+
+          </section>
+
+          <section class="contact__form-box">
+            <div class="contact__map">
+
+              <!-- <iframe frameborder="0" scrolling="no" marginheight="0" marginwidht="0" src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d1975.2014099764167!2d-79.02251640293431!3d-8.060329121272195!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x91ad3f09ae368f85%3A0xc05ac61d1e6d2c14!2zQm9kZWdhIOKAnERvw7FhIE1hcnnigJ0!5e0!3m2!1ses-419!2spe!4v1693887291846!5m2!1ses-419!2spe" width="600" height="450" style="border:0;"  loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe> -->
+
+            </div>
+
+            <header class="contact__form-header">
+              <h3 class="form-header__title">Como puedo <span class="title__color">ayudarte?</span></h3>
+            </header>
+            <form class="contact__form">
+
+              <div class="form__container">
+
+                <section class="form__left">
+
+                  <div class="form_group">
+                    <input class="form__input" type="text" name="name" required placeholder="Nombre" autocomplete="off">
+                    <label class="form__label" for="name">Nombre</label>
+                  </div>
+                  <div class="form_group">
+                    <input class="form__input" type="email" name="email" required placeholder="Email" autocomplete="off">
+                    <label class="form__label" for="email">Email</label>
+                  </div>
+                  <div class="form_group">
+                    <input class="form__input" type="text" name="subject" required placeholder="Subject" autocomplete="off">
+                    <label class="form__label" for="subject">Asunto</label>
+                  </div>
+
+                </section>
+
+                <section class="form__right">
+                  <div class="form_group form_group--textarea">
+                    <textarea class="form__input form__input--textarea" name="message" required
+                      placeholder="Mensaje"></textarea>
+                    <label class="form__label" for="message">Mensaje</label>
+                  </div>
+                </section>
+
+                
+              </div>
+              <input class="form__button" type="submit" value="enviar mensaje">
+
+            </form>
+
+          </section>
+
+        </section>
+
+      </section>
+    </main>
+
+  </div>
+
+</body>
+
+</html>

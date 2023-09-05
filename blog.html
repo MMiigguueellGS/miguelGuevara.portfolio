@@ -1,0 +1,229 @@
+<!DOCTYPE html>
+<html lang="es">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <!-- Estilos -->
+
+  <link rel="stylesheet" href="assets/fonts/fontawesome-free-6.1.2-web/css/all.min.css">
+  <link rel="stylesheet" href="assets/fonts/poppins/poppins.css">
+  <link rel="stylesheet" href="assets/css/reset.css">
+  <link rel="stylesheet" href="assets/css/scroll.css">
+  <link rel="stylesheet" href="assets/css/style.css">
+  <title>Portafolio - Miguel Guevara</title>
+</head>
+
+<body>
+
+  <!-- Layout principal -->
+  <div class="layout">
+
+    <!-- Barra lateral (info Usuario) -->
+    <aside class="layout__aside">
+
+      <secction class="aside__user-info">
+
+        <!-- informacion General del Usuario -->
+        <div class="user-info__general">
+          <div class="user-info__container-imagen">
+            <img src="assets/img/foto-perfil.png" alt="Foto perfil Usuario" class="user-info__image">
+            <!-- aqui ira el seudoelemento after(ultimo Hijo de contenedor)  fondo de la imagen -->
+          </div>
+
+          <h2 class="user-info__name">Miguel Guevara</h2>
+          <h3 class="user-info__job">Desarrollador Web</h3>
+        </div>
+
+        <!-- Menu de navegacion -->
+        <nav class="layout__menu">
+          <ul class="menu__list">
+            <li class="menu__option">
+              <a href="index.html" class="menu__link">
+                <i class="menu__icon  fa-solid fa-house "></i>
+                <span class="menu__overlay">Home</span>
+              </a>
+            </li>
+            <li class="menu__option">
+              <a href="sobreMi.html" class="menu__link ">
+                <i class="menu__icon  fa-solid fa-user "></i>
+                <span class="menu__overlay">Sobre mi</span>
+              </a>
+            </li>
+            <li class="menu__option">
+              <a href="curriculum.html" class="menu__link ">
+                <i class="menu__icon  fa-solid fa-graduation-cap "></i>
+                <span class="menu__overlay">Curriculum</span>
+              </a>
+            </li>
+            <li class="menu__option">
+              <a href="portafolio.html" class="menu__link ">
+                <i class="menu__icon  fa-solid fa-briefcase "></i>
+                <span class="menu__overlay">Portafolio</span>
+              </a>
+            </li>
+            <li class="menu__option">
+              <a href="blog.html" class="menu__link menu__link--active">
+                <i class="menu__icon  fa-solid fa-book "></i>
+                <span class="menu__overlay">Blog</span>
+              </a>
+            </li>
+            <li class="menu__option">
+              <a href="contacto.html" class="menu__link">
+                <i class="menu__icon  fa-solid fa-envelope "></i>
+                <span class="menu__overlay">Contacto</span>
+              </a>
+            </li>
+          </ul>
+        </nav>
+
+        <!-- Links a redes Sociales -->
+        <div class="user-info__links">
+          <ul class="links__social">
+            <li class="social__option">
+              <a href="#" class="social__link">
+                <i class="social__icon fa-brands fa-youtube"></i>
+              </a>
+            </li>
+            <li class="social__option">
+              <a href="#" class="social__link">
+                <i class="social__icon fa-brands fa-linkedin"></i>
+              </a>
+            </li>
+            <li class="social__option">
+              <a href="#" class="social__link">
+                <i class="social__icon fa-brands fa-instagram"></i>
+              </a>
+            </li>
+          </ul>
+        </div>
+
+        <!-- boton del cv -->
+        <div class="user-info__buttons">
+          <a href="#" class="user-info__btn">Descargar CV</a>
+        </div>
+
+
+        <!-- pie de pagina -->
+        <footer class="user-info__footer">
+          &copy;2023 Miguel Angel Guevara Simon
+        </footer>
+
+      </secction>
+    </aside>
+
+    <!-- contenido Principal -->
+    <main class="layout__content">
+      <section class="content__page content__blog">
+        <!-- ESTE CONTENIDO CAMBIA EN CADA SITIO web -->
+        <header class="blog__header">
+          <h1 class="blog__title">Blog</h1>
+        </header>
+        <section class="blog__articles">
+          <article class="articles__article">
+
+            <div class="article__top">
+              <div class="article__category">Desarrollo</div>
+              <a class="article__image-link" href="#">
+                <div class="article__mask">
+                  <img class="article__image" src="assets/img/articulo-1.jpg" alt="imagen del blog">
+                </div>
+
+                <div class="article__logo">
+                  <i class="article__icon fa-solid fa-book"></i>
+                </div>
+              </a>
+
+            </div>
+
+            <div class="article__bottom">
+             <time class="article__date" datetime="2024-08-30">30/08/2024</time>
+            <a class="article__link" href="#">
+              <h2 class="article__title">Como aprender a programar </h2>
+            </a>
+            </div>
+
+          </article>
+          <article class="articles__article">
+
+            <div class="article__top">
+              <div class="article__category">Desarrollo</div>
+              <a class="article__image-link" href="#">
+                <div class="article__mask">
+                  <img class="article__image"  src="assets/img/articulo-2.jpg" alt="imagen del blog">
+                </div>
+
+                <div class="article__logo">
+                  <i class="article__icon fa-solid fa-book"></i>
+                </div>
+              </a>
+
+            </div>
+
+            <div class="article__bottom">
+             <time class="article__date" datetime="2024-08-30">05/09/2024</time>
+            <a class="article__link" href="#">
+              <h2 class="article__title">Como hacer animaciones en css </h2>
+            </a>
+            </div>
+
+          </article>
+          <article class="articles__article">
+
+            <div class="article__top">
+              <div class="article__category">Desarrollo</div>
+              <a class="article__image-link" href="#">
+                <div class="article__mask">
+                  <img class="article__image"  src="assets/img/articulo-3.jpg" alt="imagen del blog">
+                </div>
+
+                <div class="article__logo">
+                  <i class="article__icon fa-solid fa-book"></i>
+                </div>
+              </a>
+
+            </div>
+
+            <div class="article__bottom">
+             <time class="article__date" datetime="2024-08-30">30/04/2024</time>
+            <a class="article__link" href="#">
+              <h2 class="article__title">Como usar el local Store en js </h2>
+            </a>
+            </div>
+
+          </article>
+          <article class="articles__article">
+
+            <div class="article__top">
+              <div class="article__category">Desarrollo</div>
+              <a class="article__image-link" href="#">
+                <div class="article__mask">
+                  <img class="article__image"  src="assets/img/articulo-4.jpg" alt="imagen del blog">
+                </div>
+
+                <div class="article__logo">
+                  <i class="article__icon fa-solid fa-book"></i>
+                </div>
+              </a>
+
+            </div>
+
+            <div class="article__bottom">
+             <time class="article__date" datetime="2024-08-30">01/06/2024</time>
+            <a class="article__link" href="#">
+              <h2 class="article__title">Como maquetar una web </h2>
+            </a>
+            </div>
+
+          </article>
+        </section>
+       
+
+      </section>
+    </main>
+
+  </div>
+
+</body>
+
+</html>
