@@ -1,0 +1,242 @@
+.layout__menu-toggle {
+  display: none;
+}
+@media (max-width: 1490px) {
+  body {
+    padding: 0;
+  }
+  .layout {
+    min-width: auto;
+    width: 85%;
+  }
+}
+
+@media (max-width: 1320px) {
+  .layout {
+    width: 89%;
+    margin-left: 3rem;
+  }
+}
+
+@media (max-width: 1160px) {
+  .layout {
+    width: 85%;
+    margin-left: 4rem;
+  }
+  .certificates__certificate {
+    flex-basis: 100%;
+  }
+}
+
+@media (max-width: 1090px) {
+  body {
+    position: static;
+
+    /* agregados por mi - para  que mi fondo siga en el responsive*/
+    background-size: cover;
+    background-position: center;
+  }
+  .layout {
+    width: 100%;
+    height: 100%;
+    min-height: 100%;
+    margin: 0;
+    border-radius: 0;
+    grid-template-areas: "content";
+    grid-template-columns: 100%;
+  }
+  .layout__menu-toggle {
+    display: none;
+    position: absolute;
+    right: 1rem;
+    top: 1rem;
+    width: 4.8rem;
+    height: 4.8rem;
+    line-height: 4.8rem;
+    text-align: center;
+    font-size: 2.5rem;
+    background-color: var(--color-secundary);
+    color: var(--color-principal);
+    border-radius: 3rem;
+    cursor: pointer;
+  }
+  .fa-xmark {
+    display: none;
+  }
+  .layout__aside {
+    display: block;
+    position: absolute;
+    max-width: 320px;
+    top: 0;
+    right: 0;
+    bottom: 0;
+    text-align: center;
+    overflow: auto;
+    border-radius: 0;
+    transition: all 300ms ease-in-out;
+    z-index: 5;
+  }
+  .user-info__container-imagen {
+    width: 13rem;
+    margin-top: 3rem;
+    display: inline-block;
+  }
+
+  .user-info__name {
+    font-size: 3rem;
+    margin-top: 0.5rem;
+    margin-bottom: 1rem;
+  }
+  .layout__menu {
+    position: static;
+    margin: 3rem 0;
+  }
+  .menu__list {
+    position: static;
+    width: 100%;
+    background-color: var(--color-secundary);
+    box-shadow: none;
+    margin-left: 0;
+    padding: 0;
+    min-height: auto;
+  }
+  .menu__link {
+    display: block;
+    padding: 1.2rem;
+  }
+  .menu__icon {
+    display: none;
+  }
+
+  .menu__overlay {
+    position: static;
+    opacity: 0.7;
+    margin-top: 0;
+    padding: 0;
+    box-shadow: none;
+    font-size: 1.6rem;
+    line-height: 2rem;
+  }
+
+  .menu__link--active .menu__overlay {
+    opacity: 1;
+  }
+  .layout__content {
+    border-radius: 0;
+    background-color: transparent;
+    height: 100%;
+    width: 100%;
+  }
+  .content__page {
+    border-radius: 0;
+    height: 100vh;
+  }
+  .layout__menu {
+    position: static;
+  }
+}
+
+@media (max-width: 800px) {
+  .reviews__container {
+    flex-direction: column;
+  }
+  .reviews__review {
+    margin-top: 6rem;
+    flex-basis: 100%;
+  }
+
+  .clients__container {
+    flex-wrap: wrap;
+    justify-content: space-around;
+  }
+  .prices__container {
+    flex-direction: column;
+  }
+  .prices__box {
+    flex-basis: 100%;
+    margin: 0;
+  }
+  .prices__box:last-child {
+    margin-top: 2rem;
+  }
+  .gallery__item {
+    flex-basis: 50%;
+  }
+  .articles__article {
+    flex-basis: 100%;
+  }
+}
+
+@media (max-width: 585px) {
+  .about__personal-info {
+    flex-direction: column;
+  }
+  .personal-info__data {
+    flex-basis: 100%;
+    padding: 0;
+    margin-top: 2rem;
+  }
+  .services__container {
+    flex-direction: column;
+    flex-wrap: wrap;
+  }
+  .services__service {
+    flex-basis: 100%;
+    margin-right: 0;
+    margin-bottom: 3rem;
+  }
+  .resume__container {
+    flex-direction: column;
+  }
+  .resume__right {
+    flex-basis: 100%;
+    padding: 0;
+    margin-bottom: 3rem;
+  }
+  .contact__container {
+    flex-direction: column;
+  }
+  .contact__info {
+    padding: 0 1.5rem;
+  }
+  .extra__container {
+    flex-direction: column;
+    gap: 2rem;
+  }
+}
+
+@media (max-width: 480px) {
+  body {
+    position: static;
+
+    /* agregados por mi - para  que mi fondo siga en el responsive*/
+    background-size: cover;
+    background-position: top;
+  }
+  .page__name {
+    font-size: 4.8rem;
+    text-align: center;
+    line-height: 5.6rem;
+  }
+  .certificate__logo {
+    width: 100%;
+  }
+  .gallery__item {
+    flex-basis: 100%;
+  }
+  .form__container {
+    flex-direction: column;
+  }
+  .form__left {
+    flex-basis: 100%;
+    margin-right: 0;
+  }
+  .form__right {
+    flex-basis: 100%;
+    max-width: 100%;
+    max-height: 100%;
+  }
+  .form__button {
+    margin: 0 auto;
+  }
+}
