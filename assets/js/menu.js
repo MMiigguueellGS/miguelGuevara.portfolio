@@ -17,5 +17,14 @@ document.addEventListener("DOMContentLoaded", (e) => {
       iconBars.style.opacity = 1;
       iconXmark.style.opacity = 0;
     }
+
+    window.addEventListener("resize", () => {
+      const size = parseInt(document.body.clientWidth);
+      if (size <= 1060) {
+        aside.classList.remove("layout__aside--visible");
+        iconBars.style.opacity = 1;
+        iconXmark.style.opacity = 0;
+      }
+    });
   });
 });
