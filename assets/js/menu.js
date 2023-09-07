@@ -1,6 +1,14 @@
-document.addEventListener("click",(e)=>{
- const show = document.querySelector('.layout__aside')
- if(!show.classList.contains('layout__aside--visible')){
-  show.classList.add('layout__aside--visible')
- }
-})
+document.addEventListener("DOMContentLoaded", (e) => {
+  console.log('que paso')
+  const aside = document.querySelector(".layout__aside");
+  const btn = document.querySelector(".layout__menu-toggle");
+  console.log(btn)
+
+  btn.addEventListener("click", (e) => {
+    console.log('clik')
+    const visible = document.querySelector(".layout__aside--visible");
+    if (!visible) {
+      aside.classList.add("layout__aside--visible");
+    }
+  });
+});
