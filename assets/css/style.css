@@ -334,7 +334,7 @@ body {
 }
 
 .personal-info__bio {
-  flex-basis: 56%;
+  flex-basis: 100%;/* estubo en 56% porque hubo otra seccion que usaba el resto*/
 }
 
 .personal_info__description {
