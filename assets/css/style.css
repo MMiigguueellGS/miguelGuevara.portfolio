@@ -988,7 +988,7 @@ transform: scale(1.1);
 .article__top{
   position: relative;
   overflow: hidden;
-}
+}     
 .article__category{
   position: absolute;
   top: 1rem;
