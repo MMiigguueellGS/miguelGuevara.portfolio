@@ -46,7 +46,7 @@
     grid-template-columns: 100%;
   }
   .layout__menu-toggle {
-    z-index: 9990;
+    z-index: 100;
     display: block;
     position: absolute;
     right: 1rem;
@@ -60,12 +60,11 @@
     color: var(--color-principal);
     border-radius: 3rem;
     cursor: pointer;
+    transition: all 300ms ease-in-out;
   }
-  .fa-xmark {
-    display: none;
-  }
+
   .layout__aside {
-    z-index: 50;
+    z-index: -10;/* estuvo en 50*/
     display: block;
     position: absolute;
     max-width: 320px;
@@ -77,22 +76,31 @@
     border-radius: 0;
     transition: all 300ms ease-in-out;
     opacity: 0;
-    /* margin-right: -100%;
-    opacity: 0; */
+   
+  
+  }
+
+  .fa-bars {
+    opacity: 1;
+    position: absolute;
+    top: 25%;
+    right: 25%;
+  }
+  .fa-xmark {
+    position: absolute;
+    opacity: 0;
+    top: 25%;
+    right: 31%;
   }
 
   .layout__aside--visible {
     width: 100%;
-    margin-right: 0;
+    z-index: 50; /* lo agrego  que se muentre cuando este visible encima de todo */
     opacity: 1;
   }
-  /* .layout__aside--visible {
-    width: 100%;
-    margin-right: 0;
-    opacity: 1;
-  }
-  .layout__aside--hidden {
-    margin-right: -100%;
+  
+  /* .layout__aside--hidden {
+    right: -100%;
     opacity: 0;
   } */
   .user-info__container-imagen {
