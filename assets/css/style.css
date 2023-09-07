@@ -18,7 +18,7 @@
 }
 /* ESTILOS GENERALES */
 html {
-  font-size: 10px;
+  font-size: 10px;/*62.5% esto es equivalente a 10px*/
 }
 body {
   width: 100%;
