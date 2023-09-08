@@ -17,7 +17,7 @@ form.addEventListener("submit", function (event) {
 
       event.target.reset();
       message__sent.textContent = "Mensaje enviado";
-      message__sent.className = "message__sent"
+      message__sent.className = "message__sent";
       message.appendChild(message__sent);
     },
     (err) => {
@@ -27,24 +27,18 @@ form.addEventListener("submit", function (event) {
   );
 });
 
-
-
-  form.addEventListener("focus", (e) => {
-    if ( form.contains(message)) {
-      console.log('estoy en el input')
-    }
-  });
-
-
+form.addEventListener("focus", (e) => {
+  if (form.contains(message)) {
+  }
+});
 
 const inputs = form.querySelectorAll("input");
 
 inputs.forEach((input) => {
   input.addEventListener("focus", (e) => {
-    const message__sent = form.querySelector(".message__sent")
-    if ( message.childElementCount) {
-      console.log('soy yo')
-      message__sent.remove()
+    const message__sent = form.querySelector(".message__sent");
+    if (message.childElementCount) {
+      message__sent.remove();
     }
   });
 });
