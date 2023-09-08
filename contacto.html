@@ -15,6 +15,11 @@
   <link rel="stylesheet" href="assets/css/responsive.css">
   <script src="assets/js/maps.js" defer></script>
   <script src="assets/js/menu.js" defer></script>
+  <script src="assets/js/message.js" defer></script>
+  <script type="text/javascript" src="https://cdn.jsdelivr.net/npm/@emailjs/browser@3/dist/email.min.js"></script>
+  <script type="text/javascript">
+    emailjs.init('DO5uTH-WViRKwLwbu')
+  </script>
   <title>Portafolio - Miguel Guevara</title>
 </head>
 
@@ -54,12 +59,12 @@
                 <span class="menu__overlay">Sobre mi</span>
               </a>
             </li>
-            <li class="menu__option">
+            <!-- <li class="menu__option">
               <a href="curriculum.html" class="menu__link ">
                 <i class="menu__icon  fa-solid fa-graduation-cap "></i>
                 <span class="menu__overlay">Curriculum</span>
               </a>
-            </li>
+            </li> -->
             <li class="menu__option">
               <a href="portafolio.html" class="menu__link ">
                 <i class="menu__icon  fa-solid fa-briefcase "></i>
@@ -165,25 +170,28 @@
             <header class="contact__form-header">
               <h3 class="form-header__title">Como puedo <span class="title__color">ayudarte?</span></h3>
             </header>
-            <form class="contact__form">
+
+            <!-- FORMULARIO -->
+            <form class="contact__form" id="form">
 
               <div class="form__container">
 
                 <section class="form__left">
 
                   <div class="form_group">
-                    <input class="form__input" type="text" name="name" required placeholder="Nombre" autocomplete="off">
-                    <label class="form__label" for="name">Nombre</label>
+                    <input class="form__input" type="text" name="from_name" required placeholder="Nombre"
+                      autocomplete="off">
+                    <label class="form__label" for="from_name">Nombre</label>
                   </div>
                   <div class="form_group">
-                    <input class="form__input" type="email" name="email" required placeholder="Email"
+                    <input class="form__input" type="email" name="email_id" required placeholder="Email"
                       autocomplete="off">
                     <label class="form__label" for="email">Email</label>
                   </div>
                   <div class="form_group">
-                    <input class="form__input" type="text" name="subject" required placeholder="Subject"
+                    <input class="form__input" type="text" name="reply_to" required placeholder="Subject"
                       autocomplete="off">
-                    <label class="form__label" for="subject">Asunto</label>
+                    <label class="form__label" for="reply_to">Asunto</label>
                   </div>
 
                 </section>
@@ -198,7 +206,7 @@
 
 
               </div>
-              <input class="form__button" type="submit" value="enviar mensaje">
+              <input class="form__button" type="submit" value="Enviar mensaje" id="button">
 
             </form>
 
