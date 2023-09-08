@@ -1170,6 +1170,9 @@ line-height: 2.1rem;
   background-color: var(--color-secundary);
   color: var(--color-principal);
 }
+.message__sent{
+  color: rgb(225, 56, 56);
+}
 
 
 .contact__map{
